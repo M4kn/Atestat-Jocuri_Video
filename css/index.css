@@ -24,4 +24,23 @@
       font-family:'Orbitron', cursive;
       font-weight: bold;
       color: white;
+      text-shadow:0 0 20px rgba(168, 85, 247, 0.8),
+                  0 0 40px rgba(168, 85, 247, 0.6),
+                  0 0 60px rgba(168, 85, 247, 0.4);
+      animation: flicker 3s ease-in-out;
+}
+
+
+
+@keyframes flicker {
+    0%, 5%, 10%, 15%, 25%, 30%, 40%, 50%, 55%, 70%, 80%, 85%, 90% {
+        opacity: 0;
+        text-shadow: none;
+    }
+    2%, 8%, 13%, 20%, 28%, 35%, 45%, 53%, 60%, 75%, 83%, 88%, 95%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
+                     0 0 40px rgba(168, 85, 247, 0.6),
+                     0 0 60px rgba(168, 85, 247, 0.4);
+    }
 }
