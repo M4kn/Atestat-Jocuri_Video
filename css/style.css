@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      background-color: #010101;
+      overflow: hidden;
+}
+
+/*Header and Nav*/
+
+header {
+      position: relative;
+      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+      padding: 2vh 0;
+      overflow: visible;
+      padding-bottom: 2vh;
+}
+
+header::before {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+      height: 150px;
+      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+      border-radius: 50%;
+      z-index: 1;
+}
+
+nav {
+      display: flex;
+      position: relative;
+      z-index: 1;
+      justify-content: center;
+      background-color: inherit;
+      bottom: -15px;
+}
+
+.nav-link {
+      display: flex;
+      list-style: none;
+      gap: 4vw;
+      padding-left: 0;
+      margin: 0;
+}
+
+
+.nav-link a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+}

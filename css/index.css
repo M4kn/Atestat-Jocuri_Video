@@ -1,4 +1,27 @@
-* {
-      padding: 0%;
-      margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+/*Hero Section*/
+.hero {
+      background-color: rgba(0, 0, 0, 0.4);
+      background-image: url('img/main_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+}
+
+.hero-title {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: min(5.5vh, 3vw);
+      letter-spacing: 3.5vw;
+      font-family:'Orbitron', cursive;
+      font-weight: bold;
+      color: white;
 }
