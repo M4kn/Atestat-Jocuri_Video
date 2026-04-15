@@ -39,6 +39,27 @@ nav, .nav-link {
 }
 
 /* Special Nav for this page */
+header {
+      position: relative;
+      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+      padding: 2vh 0;
+      overflow: visible;
+      padding-bottom: 2vh;
+}
+
+header::before {
+      content: '';
+      position: absolute;
+      bottom: -35px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+      height: 150px;
+      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+      border-radius: 50%;
+      z-index: 1;
+}
+
 nav {
     display: flex;
     position: relative;
