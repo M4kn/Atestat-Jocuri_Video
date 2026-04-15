@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=VT323&display=swap');
+
+.companies-page {
+      background-color: #050505;
+      min-height: 100vh;
+      padding: 60px 10%;
+      color: white;
+}
+
+.companies-header {
+      text-align: center;
+      padding-top: 180px;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 10;
+}
+
+.companies-header h1 {
+      font-family: 'VT323', monospace;
+      font-size: 5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow:
+            0 0 10px #ff00de,
+            0 0 20px #ff00de,
+            2px 2px 5px #000;
+}
+
+.companies-header p {
+      font-family: 'Exo 2', sans-serif;
+      max-width: 800px;
+      margin: 20px auto 0;
+      color: #eee;
+      font-size: 1.2rem;
+      text-indent: 0;
+      text-shadow: 1px 1px 5px #000;
+}
+
+.companies-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 30px;
+      margin: 50px auto 0;
+      padding: 0 50px;
+}
+
+.company-card {
+      background: rgba(10, 10, 10, 0.75);
+      backdrop-filter: blur(5px);
+      padding: 40px 30px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s ease;
+      position: relative;
+      overflow: hidden;
+}
+
+.company-card p {
+      color: #000;
+      /* Alb pur pentru vizibilitate maximă */
+      font-weight: 400;
+      line-height: 1.7;
+      /* O umbră neagră foarte fină care ajută textul să "plutească" peste culori */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+      margin-bottom: 25px;
+}
+
+.company-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.06);
+}
+
+.company-card h2 {
+      font-family: 'VT323', monospace;
+      font-size: 2.8rem;
+      color: #fff;
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      margin-bottom: 5px;
+}
+
+.brand-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+}
+
+.notable-gear {
+      color: #00f3ff;
+      font-size: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2);
+      padding-top: 20px;
+      font-family: 'VT323', monospace;
+      letter-spacing: 1px;
+      text-shadow: 0 0 5px rgba(0, 243, 255, 0.3);
+}
+
+/* Colors for each brand */
+.nintendo .brand-line {
+      background: #e60012;
+      box-shadow: 0 0 15px #e60012;
+}
+
+.sega .brand-line {
+      background: #0089cf;
+      box-shadow: 0 0 15px #0089cf;
+}
+
+.sony .brand-line {
+      background: #003087;
+      box-shadow: 0 0 15px #003087;
+}
+
+.microsoft .brand-line {
+      background: #107c10;
+      box-shadow: 0 0 15px #107c10;
+}
+
+.company-card h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #fff;
+}
+
+.founding {
+      color: #00f3ff;
+      font-family: 'VT323', monospace;
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+}
+
+.company-card p {
+      text-indent: 0;
+      line-height: 1.6;
+      color: #bbb;
+      margin-bottom: 20px;
+}
+
+.atari .brand-line {
+      background: #e4002b;
+      box-shadow: 0 0 15px #e4002b;
+}
+
+.ubisoft .brand-line {
+      background: #0070ff;
+      box-shadow: 0 0 15px #0070ff;
+}
+
+.gameloft .brand-line {
+      background: #00bcd4;
+      box-shadow: 0 0 15px #00bcd4;
+}
+
+.rockstar .brand-line {
+      background: #fdb913;
+      box-shadow: 0 0 15px #fdb913;
+}
+
+.ea .brand-line {
+      background: #ff4747;
+      box-shadow: 0 0 15px #ff4747;
+}
+
+.valve .brand-line {
+      background: #171a21;
+      box-shadow: 0 0 15px #171a21;
+}
+
+.capcom .brand-line {
+      background: #ffcc00;
+      box-shadow: 0 0 15px #ffcc00;
+}
+
+.konami .brand-line {
+      background: #d30000;
+      box-shadow: 0 0 15px #d30000;
+}
+
+.activision .brand-line {
+      background: #ffffff;
+      box-shadow: 0 0 15px #ffffff;
+}
+
+.epic .brand-line {
+      background: #313131;
+      box-shadow: 0 0 15px #313131;
+}
+
+/* Hover effect */
+.company-card:hover {
+      border-color: rgba(255, 255, 255, 0.4);
+      background: rgba(255, 255, 255, 0.08);
+}
