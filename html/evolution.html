@@ -4,19 +4,143 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jocuri video</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/evolution.css" />
+  </head>
   <body>
     <header>
       <nav>
         <ul class="nav-link">
           <li><a href="index.html">Home</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="evolution.html">Evolution</a></li>
-          <li><a href="companies.html">Companies</a></li>
-          <li><a href="games.html">Games</a></li>
+          <li><a href="history.html">Istorie</a></li>
+          <li><a href="evolution.html">Evoluție</a></li>
+          <li><a href="companies.html">Companii</a></li>
+          <li><a href="games.html">Jocuri</a></li>
         </ul>
       </nav>
     </header>
+
+    <main class="evolution-page">
+      <header class="evolution-header">
+        <h1>Evoluția Tehnologică</h1>
+        <p>
+          De la câteva linii albe pe un ecran negru la lumi virtuale
+          indistinguibile de realitate. Vezi cum s-a transformat hardware-ul
+          care ne-a definit pasiunea.
+        </p>
+      </header>
+
+      <section class="evolution-grid">
+        <!-- Grafică -->
+        <div class="evo-card" id="evo-graphics">
+          <div class="evo-icon">🖥️</div>
+          <h2>Grafică & Vizual</h2>
+          <p>
+            Călătoria de la rezoluția de 160x192 pixeli a consolei Atari la
+            realismul incredibil oferit de Ray Tracing și rezoluțiile 8K de
+            astăzi.
+          </p>
+          <ul class="evo-list">
+            <li>Era Pixel Art (8-bit / 16-bit)</li>
+            <li>Revoluția Poligoanelor (3D timpuriu)</li>
+            <li>Era HD și Iluminarea Dinamică</li>
+            <li>Fotorealism și VR</li>
+          </ul>
+        </div>
+
+        <!-- Controlere -->
+        <div class="evo-card" id="evo-control">
+          <div class="evo-icon">🎮</div>
+          <h2>Interacțiune & Control</h2>
+          <p>
+            Cum am trecut de la joystick-ul cu un singur buton la controlere cu
+            feedback haptic, senzori de mișcare și interfețe neurale.
+          </p>
+          <ul class="evo-list">
+            <li>Joystick-ul Arcade</li>
+            <li>D-Pad-ul și revoluția butoanelor de umăr</li>
+            <li>Stick-urile Analogice</li>
+            <li>Motion Control și Haptic Feedback</li>
+          </ul>
+        </div>
+
+        <!-- Stocare -->
+        <div class="evo-card" id="evo-storage">
+          <div class="evo-icon">💾</div>
+          <h2>Medii de Stocare</h2>
+          <p>
+            Evoluția capacității de a purta lumi întregi în buzunar, de la
+            câteva kilobayți pe o casetă la terabyți pe SSD-uri ultra-rapide.
+          </p>
+          <ul class="evo-list">
+            <li>Casete și Cartușe</li>
+            <li>Era Optică (CD, DVD, Blu-ray)</li>
+            <li>Distribuția Digitală (Steam, PSN)</li>
+            <li>Cloud Gaming (Streaming direct)</li>
+          </ul>
+        </div>
+
+        <!-- Online & Conectivitate -->
+        <div class="evo-card" id="evo-online">
+          <div class="evo-icon">🌐</div>
+          <h2>Online & Social</h2>
+          <p>
+            De la jocul pe aceeași canapea la universuri persistente unde
+            milioane de oameni se întâlnesc simultan în spațiul virtual.
+          </p>
+          <ul class="evo-list">
+            <li>Multiplayer Local (Split-screen)</li>
+            <li>Era LAN Parties și Dial-up</li>
+            <li>MMORPG-uri și Servicii Online</li>
+            <li>Cloud Gaming și Metaverse</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="comparison-section">
+        <h2 class="comparison-title">Evoluția dintr-o privire</h2>
+        <div class="table-container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Caracteristică (Click pentru detalii)</th>
+                <th>Era Retro (Anii '80)</th>
+                <th>Era Modernă (Prezent)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><a href="#evo-graphics" class="table-link">Grafică</a></td>
+                <td>Pixeli 2D (8-bit)</td>
+                <td>Fotorealism & Ray Tracing</td>
+              </tr>
+              <tr>
+                <td><a href="#evo-control" class="table-link">Control</a></td>
+                <td>Joystick (1 buton)</td>
+                <td>Haptic Feedback & VR</td>
+              </tr>
+              <tr>
+                <td><a href="#evo-storage" class="table-link">Stocare</a></td>
+                <td>Cartușe (KB / MB)</td>
+                <td>SSD / Cloud (GB / TB)</td>
+              </tr>
+              <tr>
+                <td><a href="#evo-online" class="table-link">Jucatori</a></td>
+                <td>Local (1-4 persoane)</td>
+                <td>Global (Milioane online)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="footer-line"></div>
+      <p>
+        © 2026 Istoria Jocurilor Video. Creat cu pasiune de
+        <span>Tanase Pretor Ionut</span>.
+      </p>
+    </footer>
   </body>
 </html>
