@@ -23,47 +23,6 @@ p {
       font-size: 1.4rem;
 }
 
-/* Nav rework for this page*/
-nav {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  z-index: 1000;
-  justify-content: center;
-  align-items: center;
-  background-color: #050505;
-  border-bottom: 2px solid #ff00de;
-  box-shadow: 0 2px 15px rgba(255, 0, 222, 0.4);
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  display: flex;
-  list-style: none;
-  gap: 30px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link a {
-  font-family: 'VT323', monospace;
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  transition: 0.3s;
-}
-
-.nav-link a:hover {
-  color: #00f3ff;
-  text-shadow: 0 0 10px #00f3ff;
-}
-
-
 /* History sections */
 .history-page {
       padding-top: 150px;
