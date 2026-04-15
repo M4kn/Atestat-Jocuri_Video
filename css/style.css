@@ -6,7 +6,8 @@
       box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
       max-width: 100%;
       overflow-x: hidden;
       overflow-y: auto;
@@ -15,6 +16,28 @@ html, body {
 body {
       background: linear-gradient(315deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
 }
+
+/* Fonts */
+h1, h2, h3, h4, h5, h6 {
+      font-family: 'VT323', monospace;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+}
+
+h1 {
+      font-size: 4.5rem;
+}
+
+h2 {
+      font-size: 2.5rem;
+}
+
+p {
+      font-family: 'Exo 2', sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+}
+
 
 /*Header and Nav*/
 
@@ -65,4 +88,43 @@ nav {
       text-transform: uppercase;
       letter-spacing: 1px;
       transition: all 0.3s ease;
+}
+
+/* Footer */
+.main-footer {
+      padding: 40px 10%;
+      background: #000;
+      text-align: center;
+      color: #666;
+      font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-line {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff00de, #00f3ff, transparent);
+      margin-bottom: 30px;
+}
+
+.main-footer span {
+      color: #00f3ff;
+      font-weight: bold;
+}
+
+.footer-socials {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+}
+
+.footer-socials a {
+      color: #444;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: 0.3s;
+}
+
+.footer-socials a:hover {
+      color: #ff00de;
+      text-shadow: 0 0 5px #ff00de;
 }
