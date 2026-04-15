@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=VT323&display=swap');
+
+.games-page {
+      background-color: #050505;
+      min-height: 100vh;
+      padding: 160px 8% 100px;
+      color: white;
+}
+
+.games-header {
+      text-align: center;
+      margin-bottom: 60px;
+      position: relative;
+      z-index: 100;
+      padding-top: 180px;
+}
+
+.games-header h1 {
+      font-family: 'VT323', monospace;
+      font-size: 5rem;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      text-shadow:
+            0 0 10px #00f2ffcb,
+            0 0 20px #00f2ffc9,
+            2px 2px 5px #000;
+}
+
+.games-header p {
+      font-family: 'Exo 2', sans-serif;
+      max-width: 800px;
+      margin: 20px auto 0;
+      color: #eee;
+      font-size: 1.2rem;
+      text-indent: 0;
+      text-shadow: 1px 1px 5px #000;
+}
+
+.games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+}
+
+.game-card {
+      background: rgba(10, 10, 10, 0.5);
+      backdrop-filter: blur(5px);
+      padding: 40px 30px;
+      border-radius: 15px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      display: flex;
+      flex-direction: column;
+}
+
+.game-card:hover {
+      transform: scale(1.05);
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #ff00de;
+      box-shadow: 0 10px 30px rgba(255, 0, 222, 0.2);
+}
+
+/* Badge for year */
+.game-year {
+      position: absolute;
+      top: -15px;
+      right: 20px;
+      background: #ff00de;
+      color: white;
+      padding: 5px 15px;
+      font-family: 'VT323', monospace;
+      font-size: 1.4rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #ff00de;
+}
+
+.game-card h2 {
+      font-family: 'VT323', monospace;
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.developer {
+      font-family: 'VT323', monospace;
+      font-size: 1.2rem;
+      color: #888;
+      margin-bottom: 20px;
+}
+
+.developer span {
+      color: #00f3ff;
+}
+
+.game-card p {
+      text-indent: 0;
+      line-height: 1.6;
+      color: #eee;
+      font-size: 1.05rem;
+}
