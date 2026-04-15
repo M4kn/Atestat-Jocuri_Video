@@ -33,6 +33,46 @@
 
 }
 
+/* Nav Reset */
+nav, .nav-link {
+    all: unset;
+}
+
+/* Special Nav for this page */
+nav {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    justify-content: center;
+    background-color: inherit;
+    bottom: -15px;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 4vw;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.nav-link a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    font-family: serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.nav-link a:hover {
+  color: #00f3ff;
+  text-shadow: 0 0 10px #00f3ff;
+}
+
 /* About section */
 .about {
     padding: 0px 5vw;
@@ -329,14 +369,41 @@
 
 /* Keyframes */
 @keyframes flicker {
-    0%, 5%, 10%, 15%, 25%, 30%, 40%, 50%, 55%, 70%, 80%, 85%, 90% {
+
+    0%,
+    5%,
+    10%,
+    15%,
+    25%,
+    30%,
+    40%,
+    50%,
+    55%,
+    70%,
+    80%,
+    85%,
+    90% {
         opacity: 0;
         text-shadow: none;
     }
-    2%, 8%, 13%, 20%, 28%, 35%, 45%, 53%, 60%, 75%, 83%, 88%, 95%, 100% {
+
+    2%,
+    8%,
+    13%,
+    20%,
+    28%,
+    35%,
+    45%,
+    53%,
+    60%,
+    75%,
+    83%,
+    88%,
+    95%,
+    100% {
         opacity: 1;
         text-shadow: 0 0 20px rgba(168, 85, 247, 0.8),
-                     0 0 40px rgba(168, 85, 247, 0.6),
-                     0 0 60px rgba(168, 85, 247, 0.4);
+            0 0 40px rgba(168, 85, 247, 0.6),
+            0 0 60px rgba(168, 85, 247, 0.4);
     }
 }
