@@ -1,37 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=VT323&display=swap');
 
 /*Hero Section*/
 .hero {
-      background-color: rgba(0, 0, 0, 0.4);
-      background-image: url('img/main_bg.jpg');
-      background-size: cover;
-      background-position: center;
-      background-blend-mode: multiply;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: url('img/main_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 75%, transparent 100%);
 }
 
 .hero-title {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      text-transform: uppercase;
-      font-size: min(5.5vh, 3vw);
-      letter-spacing: 3.5vw;
-      font-family:'Orbitron', cursive;
-      font-weight: bold;
-      color: white;
-      text-shadow:0 0 20px rgba(168, 85, 247, 0.8),
-                  0 0 40px rgba(168, 85, 247, 0.6),
-                  0 0 60px rgba(168, 85, 247, 0.4);
-      animation: flicker 3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: min(5.5vh, 3vw);
+    letter-spacing: 3.5vw;
+    font-family:'Orbitron', cursive;
+    font-weight: bold;
+    color: white;
+    text-shadow:0 0 20px rgba(168, 85, 247, 0.8),
+                0 0 40px rgba(168, 85, 247, 0.6),
+                0 0 60px rgba(168, 85, 247, 0.4);
+    animation: flicker 3s ease-in-out;
+
+    }
+
+/* About section */
+.about {
+    padding: 0px 5vw;
+    margin: 3vw;
+}
+
+.description {
+    color: white;
+    font-size: min(3vh, 1.2vw);
+    font-family: 'Exo 2', serif;
+    text-indent: 1.5vw;
+}
+
+/*Timeline area */
+.timeline-section {
+    padding: 0px 5vw;
+    margin: 3vw;
+    color: white;
+    font-size: min(3vh, 1.2vw);
+}
+
+.timeline {
+    list-style: none;
+    position: relative;
+    padding-left: 30px;
+    margin: 20px 0;
+}
+
+#timeline {
+    font-size: min(4vh, 2.5vw);
+    font-family: 'VT323', serif;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: 10px;
+    width: 2px;
+    background: #00f3ff;
+    box-shadow: 0 0 10px #00f3ff;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 25px;
+    color: #fff;
+    font-family: 'Exo 2', serif;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background: #ff00de;
+    border: 2px solid #00f3ff;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 8px #ff00de;
+}
+
+.timeline li:hover {
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+.timeline li:hover::before {
+    background: #fff;
+    box-shadow: 0 0 15px #fff;
 }
 
 
 
+/* Keyframes */
 @keyframes flicker {
     0%, 5%, 10%, 15%, 25%, 30%, 40%, 50%, 55%, 70%, 80%, 85%, 90% {
         opacity: 0;
