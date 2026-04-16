@@ -56,6 +56,20 @@
       overflow: hidden;
 }
 
+.company-card a {
+      text-decoration: none;
+      color: inherit;
+}
+
+.company-card a:hover {
+      color: #ff00de;
+}
+
+.company-card a:after {
+      text-decoration: none;
+      color: inherit;
+}
+
 .company-card p {
       color: #000;
       /* Alb pur pentru vizibilitate maximă */

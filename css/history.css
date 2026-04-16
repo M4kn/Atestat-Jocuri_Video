@@ -18,7 +18,8 @@ p {
 
 /* Fonts */
 
-.btn-retro, .btn-neon {
+.btn-retro,
+.btn-neon {
       font-family: 'VT323', monospace;
       font-size: 1.4rem;
 }
@@ -51,6 +52,20 @@ p {
       border-left: 4px solid #00f3ff;
       border-radius: 0 15px 15px 0;
       transition: transform 0.3s ease;
+}
+
+.history-section a {
+      text-decoration: none;
+      color: inherit;
+}
+
+.history-section a:hover {
+      color: #ff00de;
+}
+
+.history-section a:after {
+      text-decoration: none;
+      color: inherit;
 }
 
 .history-section:hover {

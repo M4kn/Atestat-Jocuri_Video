@@ -38,30 +38,31 @@ body {
 }
 
 /* Nav Reset */
-nav, .nav-link {
+nav,
+.nav-link {
     all: unset;
 }
 
 /* Special Nav for this page */
 header {
-      position: relative;
-      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
-      padding: 2vh 0;
-      overflow: visible;
-      padding-bottom: 2vh;
+    position: relative;
+    background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+    padding: 2vh 0;
+    overflow: visible;
+    padding-bottom: 2vh;
 }
 
 header::before {
-      content: '';
-      position: absolute;
-      bottom: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 120%;
-      height: 150px;
-      background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
-      border-radius: 50%;
-      z-index: 1;
+    content: '';
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 150px;
+    background: linear-gradient(135deg, #ff006e 0%, #8338ec 50%, #3a86ff 100%);
+    border-radius: 50%;
+    z-index: 1;
 }
 
 nav {
@@ -94,8 +95,8 @@ nav {
 }
 
 .nav-link a:hover {
-  color: #00f3ff;
-  text-shadow: 0 0 10px #00f3ff;
+    color: #00f3ff;
+    text-shadow: 0 0 10px #00f3ff;
 }
 
 /* About section */
@@ -262,6 +263,21 @@ nav {
     padding: 80px 10%;
     background: #080808;
     text-align: center;
+
+}
+
+.trivia-section a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.trivia-section a:hover {
+    color: #ff00de;
+}
+
+.trivia-section a:after {
+    text-decoration: none;
+    color: inherit;
 }
 
 .trivia-header {
